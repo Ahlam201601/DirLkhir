@@ -16,7 +16,7 @@ export function NavbarSignOut() {
   return (
     <button
       onClick={handleSignOut}
-      className="flex items-center gap-2 w-full px-2 py-1.5 text-sm cursor-pointer hover:bg-red-50 rounded transition-colors"
+      className="flex items-center gap-2 w-full px-2 py-1.5 text-sm cursor-pointer hover:bg-primary hover:text-white rounded transition-colors"
     >
       <LogOut className="w-4 h-4" />
       <span>Déconnexion</span>

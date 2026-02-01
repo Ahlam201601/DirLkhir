@@ -28,10 +28,11 @@ export default async function HomePage({ searchParams }: Props) {
         <div className="absolute inset-0">
           <img
             src="/image/home.png"
-            alt="Architecture marocaine traditionnelle"
-            className="w-full h-full object-cover"
+            alt="Style marocain traditionnel"
+            className="w-full h-full object-cover opacity-80"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-red-950/5 via-red-900/8 to-red-950/12" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
         </div>
         
         {/* Hero Content */}
@@ -88,13 +89,11 @@ export default async function HomePage({ searchParams }: Props) {
       {/* Needs Section */}
       <section className="container mx-auto px-6 py-16">
         <div className="mb-12">
-          <div className="flex items-center justify-between gap-6">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">Besoins de la communauté</h2>
-              <p className="text-muted-foreground text-lg">Découvrez et participez aux initiatives locales</p>
-            </div>
-            <HomeFilters />
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-foreground mb-2">Besoins de la communauté</h2>
+            <p className="text-muted-foreground text-lg">Découvrez et participez aux initiatives locales</p>
           </div>
+          <HomeFilters />
         </div>
 
         {needs.length === 0 ? (

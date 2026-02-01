@@ -18,9 +18,10 @@ import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { loginSchema, type LoginValues } from "./validate";
 import InputPasswordContainer from "../components/input-password";
+import { LogIn } from "lucide-react";
 import InputStartIcon from "../components/input-start-icon";
 import { cn } from "@/lib/utils";
-import { Mail, Lock, Loader2, LogIn } from "lucide-react";
+import { Mail, Lock, Loader2 } from "lucide-react";
 import Link from "next/link";
 
 export default function LoginForm() {

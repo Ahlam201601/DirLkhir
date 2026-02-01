@@ -106,7 +106,7 @@ export default async function MonEspacePage() {
                           Ouvert
                         </div>
                       ) : (
-                        <div className="flex items-center gap-1">
+                        <div className="flex items-center gap-1 text-green-600">
                           <CheckCircle className="w-3 h-3" />
                           Résolu
                         </div>
@@ -165,10 +165,10 @@ export default async function MonEspacePage() {
             <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
               Découvrez les besoins de votre communauté et participez aux initiatives
             </p>
-            <Button variant="outline" asChild className="border-primary/30 hover:border-primary hover:bg-primary/5 h-12 px-8">
-              <Link href="/" className="flex items-center gap-2">
-                <Home className="w-5 h-5" />
-                Voir les besoins
+            <Button variant="outline" asChild className="border-primary/30 hover:border-primary hover:bg-primary/5 h-12 px-8 group/btn">
+              <Link href="/" className="flex items-center gap-2 cursor-pointer">
+                <Home className="w-5 h-5 group-hover/btn:text-primary transition-colors" />
+                <span className="group-hover/btn:text-primary transition-colors">Voir les besoins</span>
               </Link>
             </Button>
           </div>
@@ -219,7 +219,7 @@ export default async function MonEspacePage() {
                             Ouvert
                           </div>
                         ) : (
-                          <div className="flex items-center gap-1">
+                          <div className="flex items-center gap-1 text-green-600">
                             <CheckCircle className="w-3 h-3" />
                             Résolu
                           </div>
@@ -233,7 +233,7 @@ export default async function MonEspacePage() {
                       size="sm" 
                       variant="outline" 
                       asChild
-                      className="w-full h-11 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all duration-300"
+                      className="w-full h-11 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all duration-300 group/btn"
                     >
                       <a
                         href={waUrl}
@@ -242,8 +242,8 @@ export default async function MonEspacePage() {
                         aria-label="Contacter sur WhatsApp"
                         className="flex items-center justify-center gap-2"
                       >
-                        <MessageCircle className="w-4 h-4" />
-                        <span className="font-medium">Contacter via WhatsApp</span>
+                        <MessageCircle className="w-4 h-4 group-hover/btn:text-primary transition-colors" />
+                        <span className="font-medium group-hover/btn:text-primary transition-colors">Contacter via WhatsApp</span>
                       </a>
                     </Button>
                   </CardContent>
